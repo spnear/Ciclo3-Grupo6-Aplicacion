@@ -7,5 +7,5 @@ Integrantes:
 	-
 	-
 	- Juan Sebastián Pastrana Ardila
-	- 
+	- Nathalie Cabrera Chavarro
 	- 
