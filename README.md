@@ -8,4 +8,4 @@ Integrantes:
 	- Heidy Tatiana Rincón Hernández
 	- Juan Sebastián Pastrana Ardila
 	- Nathalie Cabrera Chavarro
-	- 
+	- Samuel Mauricio Brand Alarcón
