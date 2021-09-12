@@ -605,8 +605,10 @@ progress {
 
 .img-fluid-team {
   /*max-width: 100%;*/
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
+  border-radius: 50%;
+  
 }
 
 .img-thumbnail {
@@ -11485,9 +11487,13 @@ html {
 }
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2rem;
   }
+}
+
+.portfolio-sha{
+  filter: drop-shadow(1px 1px 10px);
 }
 
 .footer {
