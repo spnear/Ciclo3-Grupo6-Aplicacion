@@ -11565,9 +11565,7 @@ html {
   display: inline-block;
   height: 250px;
   width: 250px;
-  background: linear-gradient(
-    90deg
-    , #cb3066 0%, #b22fc7 40%, #2ac3d0 80%, #2ad075 100%);
+  background: linear-gradient(90deg, #a406b0 0%, #b22fc7 40%, #2ac3d0 80%, #3800ae 100%);
   border-radius: 50%;
   z-index: -1;
 }
@@ -11576,4 +11574,9 @@ html {
   width: 90%;
   height: auto;
   margin-top: 12px;
+}
+
+#main .carousel-inner img{
+  max-height: 70vh;
+  object-fit: cover;
 }
