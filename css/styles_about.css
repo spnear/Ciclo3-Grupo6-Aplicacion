@@ -1,0 +1,18 @@
+.bg-about {
+    padding-top: calc(6rem + 74px);
+    padding-bottom: 6rem;
+    background-image: url("/assets/img/background/backgroundaviones_.png");  
+    background-size: 100%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+@media (max-width: 770px) {
+    .bg-about {
+      padding-top: calc(6rem + 104px);
+      padding-bottom: 6rem;
+      background-image: url("/assets/img/background/cloud_gra1.svg");  
+      background-size: 20%;
+      background-repeat: inherit;
+      /*background: linear-gradient(210deg, rgb(18 194 233 / 30%) 30%, rgb(96 113 237 / 28%) 50%, rgb(255 228 244 / 30%) 70%);*/
+    }
+  } 
