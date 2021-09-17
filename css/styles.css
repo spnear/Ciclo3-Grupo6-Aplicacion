@@ -11512,7 +11512,7 @@ html {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 770px) {
   .masthead {
     padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
