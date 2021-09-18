@@ -236,11 +236,10 @@ sup {
 }
 
 a {
-  color: #1abc9c;
-  text-decoration: underline;
+  color: #fff;
 }
 a:hover {
-  color: #15967d;
+  color: #F82D97;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -7675,6 +7674,10 @@ textarea.form-control-lg {
 
 .text-center {
   text-align: center !important;
+}
+
+.margen1 {
+  margin-top:0.5rem;
 }
 
 .text-decoration-none {
