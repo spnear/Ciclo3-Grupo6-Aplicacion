@@ -17,7 +17,7 @@
         type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/styles_contact.css" rel="stylesheet" />
+    <link href="css/styles_about.css" rel="stylesheet" />
     
 </head>
 
@@ -54,47 +54,65 @@
             </div>
         </div>
     </nav>
-    <!-- Navigation-->   
-    <section class="page-section bg-contactus text-secondary mb-0" id="contact">
+    <!-- Navigation--> s 
+    <section class="bg-about text-white text-center" id="about">
         <div class="container px-5">
-            <h2 class="display-4 lh-1 mb-4 text-title">CONTACT US</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card_contact">
-                    <h3 class="card_contact-title bg-transparent text-center mt-3">GIVE US A CALL</h3>
-                    <picture class="img-fluid centrar">
-                        <img class="mb-2 img-contact" src="assets/img/contact/Call_WA-06.png" alt="Ícono teléfono" />
-                    </picture>
-                    <div class="card_contact-body">
-                      <h5 class="card_contact-title text-center">xxxxxxxxxx</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card_contact centrar">
-                    <h3 class="card_contact-title text-center mt-3 bg-transparent ">SEND US AN EMAIL</h3>
-                    <picture class="img-fluid centrar">
-                        <img class="mb-2 img-contact" src="assets/img/contact/Email_WA-06.png" alt="Ícono enviar email" />
-                    </picture>
-                    <div class="card_contact-body">
-                      <h5 class="card_contact-title text-center">xxxxxxxxxx</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card_contact">
-                    <h3 class="card_contact-title text-center mt-3">COME SEE US</h3>
-                    <picture class="img-fluid centrar">
-                        <img class="mb-2 img-contact" src="assets/img/contact/Loc_WA-06.png" alt="Ícono ubicación" />
-                    </picture>
-                    <div class="card_contact-body">
-                      <h5 class="card_contact-title text-center">xxxxxxxxxx</h5>
-                    </div>
-                  </div>
+            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                <div class="col-12 col-lg-5 col-md-6">
+                    <h2 class="display-4 lh-1 mb-4 text-title">BOOKINGS</h2>
+                    <form>
+                        <div class="mb-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label text-dark" for="inlineCheckbox1">Solo ida</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label text-dark" for="inlineCheckbox2">Ida y vuelta</label>
+                              </div>
+                              <p class="text-dark ">¿A donde viajas?</p>
+                              <br>
+                          <label for="exampleInputEmail1" class="form-label text-dark">Desde*</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">    
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label text-dark">Hacia*</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <p>Fecha de ida*</p>
+                                <label for="birthday">Birthday</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                    </span>
+                                    <input data-datepicker="" class="form-control" id="birthday" type="text" placeholder="dd/mm/yyyy" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <p>Fecha de regreso*</p>
+                            </div>
+                        </div>
+                        <p class="text-dark">¿Cuando viajas?</p>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    <a class="btn btn-outline-light btn-social mx-1 mt-5" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1 mt-5" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1 mt-5" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1 mt-5" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                
                 </div>                
+                <div class="col-sm-8 col-md-6">
+                    <div class="px-5 px-sm-0">
+                        <img class="img-fluid rounded-circle" src="assets/img/background/bookings.png" alt="Imagen de personas"/>
+                    </div>
+                </div>               
             </div>
-        </div>       
-    </section>
+        </div>
+    </section>   
 
     <!-- Footer-->
     <footer class="footer">
@@ -149,6 +167,8 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <!-- Datepicker script -->
+    <script src="@@path/vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
 </body>
 
 </html>
