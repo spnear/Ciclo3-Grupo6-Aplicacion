@@ -11736,3 +11736,12 @@ html {
 .color1{
   background-color: #85CCE8;
 }
+
+.login-background {
+  background: rgb(116,52,78);
+  background: linear-gradient(90deg, rgba(116,52,78,0.927608543417367) 0%, rgba(52,107,116,0.9304096638655462) 100%);
+}
+
+.login-form {
+  background-color: #ffffff ;
+}
