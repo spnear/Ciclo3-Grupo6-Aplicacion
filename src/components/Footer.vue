@@ -27,11 +27,21 @@
                 </div>
             <!-- Footer Social Icons-->
                 <div class="text-center margen1">
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-instagram"></i></a>
+                    <a class="btn btn-outline-light" href="#!">
+                        <font-awesome-icon :icon="['fab', 'facebook']" size="2x"/>
+                    </a>
+                    <a class="btn btn-outline-light" href="#!">
+                        <font-awesome-icon :icon="['fab', 'twitter']" size="2x"/>
+                    </a>
+                    <a class="btn btn-outline-light" href="#!">
+                        <font-awesome-icon :icon="['fab', 'github']" size="2x"/>
+                    </a>
+                    <a class="btn btn-outline-light" href="#!">
+                        <font-awesome-icon :icon="['fab', 'youtube']" size="2x"/>
+                    </a>
+                    <a class="btn btn-outline-light" href="#!">
+                        <font-awesome-icon :icon="['fab', 'linkedin']" size="2x"/>
+                    </a>
                 </div>
                 <div class="text-center margen1">
                     <a><small>Copyright &copy; Your Website 2021</small></a>

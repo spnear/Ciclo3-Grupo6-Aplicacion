@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center" id="home">
+    <header class="masthead bg-primary-header text-white text-center" id="home">
         <div class="container px-5">
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-12 col-lg-5 col-md-6">
