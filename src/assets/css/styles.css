@@ -11753,3 +11753,7 @@ html {
   background-image: url("../img/background/cloud_gra1.svg");  
   background-size: 14%;
 }
+
+.text-footer {
+  font-style: italic;
+}

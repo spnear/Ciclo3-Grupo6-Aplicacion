@@ -52,10 +52,10 @@
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                <router-link to="/forgot" class="small" >Forgot Password</router-link>
                             </div>
                             <div class="text-center">
-                                <a class="small" href="login.html">Already have an account? Login!</a>
+                                <router-link to="/login" class="small" >Already have an account? Login!</router-link>
                             </div>
                         </div>
                     </div>

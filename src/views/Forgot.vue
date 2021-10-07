@@ -30,10 +30,10 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
+                                        <router-link to="/register" class="small" >Create an Account!</router-link>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="login.html">Already have an account? Login!</a>
+                                       <router-link to="/login" class="small" >Already have an account? Login!</router-link>
                                     </div>
                                 </div>
                             </div>

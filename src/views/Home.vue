@@ -7,12 +7,14 @@
                 <div class="col-12 col-lg-5 col-md-6">
                     <h2 class="display-4 lh-1 mb-4 text-title">CMS CONCEPT</h2>
                     <p class="lead fw-normal text-muted mb-5 mb-lg-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquia.</p>
-                    <a class="btn btn-outline-light py-2 px-4 mt-4 rounded-pill">
-                        Login
-                    </a>
-                    <router-link to="/login">Link a la página de about</router-link>
-
-
+                    <div class="row my-5">
+                      <div class="col-md-6">
+                        <router-link to="/login" class="btn btn-primary btn-user btn-block">Login</router-link>
+                      </div>
+                      <div class="col-md-6">
+                        <router-link to="/register" class="btn btn-primary btn-user btn-block">Sign Up</router-link>
+                      </div>
+                    </div>
                 </div>                
                 <div class="col-sm-8 col-md-6">
                     <img class="img-fluid rounded-circle" src="../assets/img/background/avion_home-02.png" alt="Imagen de un avión"/>
