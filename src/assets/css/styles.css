@@ -7820,13 +7820,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }*/
 
-.bg-primary {
-  /*background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-  background: rgb(99,105,190);
-  background: linear-gradient(90deg, rgba(99,105,190,0.17690826330532217) 35%, rgba(183,97,162,0.17970938375350143) 65%);*/
-  /*background: rgb(99,105,190);
-  background: linear-gradient(90deg, rgba(99,105,190,0) 35%, rgba(183,97,162,0) 65%);*/
+.bg-primary-header {
   background: rgb(230,231,242);
   background: linear-gradient(90deg, rgba(230,231,242,0.09007352941176472) 35%, rgba(233,222,231,0.08727240896358546) 65%);
 }
@@ -11626,7 +11620,7 @@ html {
 }
 
 .bg-navbar {
-  background: linear-gradient(90deg, rgb(206 193 255 / 12%) 35%, rgb(0 220 255 / 12%) 65%);
+  background: linear-gradient(90deg, rgb(206 193 255 / 80%) 35%, rgb(0 220 255 / 60%) 90%);
 }
 
 @media (max-width: 768px) {
@@ -11758,4 +11752,8 @@ html {
 .bg-news {
   background-image: url("../img/background/cloud_gra1.svg");  
   background-size: 14%;
+}
+
+.text-footer {
+  font-style: italic;
 }

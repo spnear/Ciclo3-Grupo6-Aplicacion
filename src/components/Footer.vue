@@ -15,23 +15,37 @@
                 <div class="col-sm-6 col-md-3 item">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="about.html " >About</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#routes">Routes</a></li>
+                        <li><router-link to="/about" class="text-white" >About</router-link></li>
+                        <li><router-link to="/team" class="text-white" >Team</router-link></li>
+                        <li><router-link to="/routes" class="text-white" >Routes</router-link></li>
                     </ul>
                 </div>
-
-                <div class="col-md-6 item text">
-                    <h3>WOLKENAIR,</h3>
-                    <p>Making dreams come true</p>
-                </div>
+                
+                    <div class="col-md-6 item text">
+                        <h4 class="text-footer">WOLKENAIR,
+                            <h6 class="small text-footer">Making dreams come true</h6>
+                        </h4>
+                    </div>
+                        
+                
+               
             <!-- Footer Social Icons-->
                 <div class="text-center margen1">
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-instagram"></i></a>
+                    <a class="btn btn-outline-light" href="#!">
+                        <font-awesome-icon :icon="['fab', 'facebook']" size="2x"/>
+                    </a>
+                    <a class="btn btn-outline-light" href="#!">
+                        <font-awesome-icon :icon="['fab', 'twitter']" size="2x"/>
+                    </a>
+                    <a class="btn btn-outline-light" href="#!">
+                        <font-awesome-icon :icon="['fab', 'github']" size="2x"/>
+                    </a>
+                    <a class="btn btn-outline-light" href="#!">
+                        <font-awesome-icon :icon="['fab', 'youtube']" size="2x"/>
+                    </a>
+                    <a class="btn btn-outline-light" href="#!">
+                        <font-awesome-icon :icon="['fab', 'linkedin']" size="2x"/>
+                    </a>
                 </div>
                 <div class="text-center margen1">
                     <a><small>Copyright &copy; Your Website 2021</small></a>

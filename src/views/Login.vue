@@ -33,7 +33,7 @@
                                                     Me</label>
                                             </div>
                                             <div class="text-center">
-                                                <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                                <router-link to="/forgot" class="small" >Forgot Password</router-link>
                                             </div>
                                         </div>
                                        
@@ -51,7 +51,7 @@
                                     <hr>
                                     <div class="justify-content-between">
                                         <p class="small">Don't have an account?
-                                            <a class="ml-2" href="register.html">Register with us!</a>
+                                            <router-link to="/register" >Register with us!</router-link>
                                         </p>
                                     </div>
                                 </div>

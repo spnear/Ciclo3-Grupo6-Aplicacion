@@ -14,33 +14,26 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1">
-                        <router-link to="/">Home</router-link> |
+                        <router-link to="/">Home</router-link> 
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <router-link to="/about">About</router-link> |
+                        <router-link to="/about">About</router-link> 
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <router-link to="/routes">Routes</router-link> |
+                        <router-link to="/routes">Routes</router-link> 
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <router-link to="/bookings">Bookings</router-link> |
+                        <router-link to="/bookings">Bookings</router-link> 
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <router-link to="/contact">Contact</router-link> |
+                        <router-link to="/contact">Contact</router-link> 
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <router-link to="/team">Team</router-link> |
+                        <router-link to="/team">Team</router-link> 
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <router-link to="/pqrs">PQRS</router-link> |
-                    </li>
-                
-
-
-                    <router-link to="/login">Login</router-link> |
-                    <router-link to="/register">Register</router-link> |
-                    <router-link to="/forgot">Forgot Password</router-link>
-                         
+                        <router-link to="/pqrs">PQRS</router-link> 
+                    </li>                         
                 </ul>
             </div>
         </div>
