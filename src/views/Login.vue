@@ -19,12 +19,12 @@
                                     <form class="user">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                                id="email" v-model="email" aria-describedby="emailHelp"
                                                 placeholder="Email Address...">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                                id="password" v-model="password"  placeholder="Password">
                                         </div>
                                         <div class="d-flex form-group justify-content-between">
                                             <div class="custom-control custom-checkbox small">
@@ -37,9 +37,9 @@
                                             </div>
                                         </div>
                                        
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                        <button href="index.html" class="btn btn-primary btn-user btn-block" @click="loginUser()" >
                                             Login
-                                        </a>
+                                        </button>
                                         <hr>
                                         <a href="index.html" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
@@ -66,3 +66,50 @@
 
     </div>
 </template>
+
+<script>
+import store from "../store/index.js";
+export default {
+  data: () => ({
+   
+    email: "",
+    emailRules: [
+      (v) => !!v || "E-mail es obligatorio",
+      (v) => /.+@.+\..+/.test(v) || "E-mail debe ser válido",
+    ],
+   
+
+    password: "",
+    passwordRules: [(v) => !!v || "contraseña es obligatoria"],
+
+    checkbox: false,
+    id: null,
+  }),
+  methods: {
+       loginUser(){
+      let obj = {  
+                  email: this.email, 
+                  password:this.password};
+      store.dispatch("getUser", obj).then(() => {
+        store.dispatch("getUsers");
+      });
+      this.$refs.form.reset();
+    }
+       
+  },
+  created: () => {
+    //accede a las acciones del store
+    
+    store.dispatch("getUsers");
+  },
+  computed: {
+   
+    users: () => {
+      return store.state.users;
+    },
+  },
+};
+</script>
+
+<style>
+</style>
