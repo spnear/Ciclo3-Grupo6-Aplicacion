@@ -31,7 +31,7 @@ password: {
 
 );
 
-personSchema.methods.isCorrectPassword =function(uspassword , callback){
+personSchema.methods.isCorrectPassword = function(uspassword , callback){
   bcrypt.compare(uspassword, this.password, function(err,same){
     if(err){
       callback(err);

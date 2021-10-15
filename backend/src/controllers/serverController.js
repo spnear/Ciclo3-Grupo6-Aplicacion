@@ -1,5 +1,5 @@
 const person = require('../models/person');
-const viajes = require('../models/viaje');
+const viajes = require('../models/viajes');
 
 class ServerController {
 
@@ -23,8 +23,8 @@ class ServerController {
     }
 
     updateVu(req, res) {
-        let { id, desde, hacia, fechaIda, fechaRegreso, idNumber } = req.body;
-        let obj = {desde, hacia, fechaIda, fechaRegreso, idNumber }
+        let { id, desde, hacia, fechaIda, fechaRegreso, nombre, idNumber } = req.body;
+        let obj = {desde, hacia, fechaIda, fechaRegreso,nombre, idNumber }
        viajes.findByIdAndUpdate(id, { $set: obj }, (error, data) => {
             if (error) {
                 res.status(500).send();

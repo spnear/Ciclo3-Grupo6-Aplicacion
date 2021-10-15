@@ -10,12 +10,15 @@ hacia: {
     type: String
 },
 fechaIda: {
-    type: Date,
-    default: Date.now()
+    type: String
+    
 },
 fechaRegreso: {
-    type: Date,
-    default: Date.now()
+    type: String
+},
+
+nombre: {
+    type:String
 },
 idNumber: {
   type: Number
@@ -27,7 +30,7 @@ idNumber: {
 
 
 {
-    collection: 'viajes'
+    collection: 'viaje'
 }
 
 );

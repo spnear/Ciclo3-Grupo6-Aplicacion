@@ -9,10 +9,10 @@ class ServerRouter{
 
     config(){
         const objServerC = new serverController.default();
-               
+
         this.router.post("/vuelo", objServerC.registerVu);
         this.router.put("/vuelo", objServerC.updateVu);
-        this.router.get("/vuelo/;id", objServerC.getVu);
+        this.router.get("/vuelo/:id", objServerC.getVu);
         this.router.delete("/vuelo", objServerC.deleteVu); 
 
         this.router.post("/login", objServerC.loginUser);    
