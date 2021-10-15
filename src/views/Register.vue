@@ -13,35 +13,33 @@
                             <form class="user">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                        <input type="text" class="form-control form-control-user" id="firstName" v-model="firstName" rules="firstNameRules"
                                             placeholder="First Name">
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                        <input type="text" class="form-control form-control-user" id="lastName" v-model="lastName" rules="lastNameRules"
                                             placeholder="Last Name">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="number" class="form-control form-control-user" id="exampleInputIdentificationNumber"
+                                    <input type="number" class="form-control form-control-user" id="idNumber"   v-model="idNumber" rules="idNumberRules"
                                         placeholder="Identification number">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input type="email" class="form-control form-control-user" id="email" v-model="email" rules="emailRules"
                                         placeholder="Email Address">
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="password" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="Password">
+                                            id="password" v-model="password" rules="passwordRules" placeholder="Password">
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user"
-                                            id="exampleRepeatPassword" placeholder="Repeat Password">
+                                            id="RepeatPassword" placeholder="Repeat Password">
                                     </div>
                                 </div>
-                                <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                    Register Account
-                                </a>
+                                <button  href="index.html" class="btn btn-primary btn-user btn-block" @click="newUser()"> Register Account </button>
                                 <hr>
                                 <a href="index.html" class="btn btn-google btn-user btn-block">
                                     <i class="fab fa-google fa-fw"></i> Register with Google
@@ -65,3 +63,64 @@
 
     </div>
 </template>
+
+<script>
+import store from "../store/index.js";
+export default {
+  data: () => ({
+    valid: true,
+    firstName: "",
+    firstNameRules: [
+      (v) => !!v || "Nombre es obligatorio",
+      (v) => (v && v.length <= 10) || "Nombre debe ser menor a 10 caracteres",
+    ],
+    lastName: "",
+    lastNameRules: [
+      (v) => !!v || "Apellido es obligatorio",
+      (v) => (v && v.length <= 10) || "Apellido debe ser menor a 10 caracteres",
+    ],
+    email: "",
+    emailRules: [
+      (v) => !!v || "E-mail es obligatorio",
+      (v) => /.+@.+\..+/.test(v) || "E-mail debe ser válido",
+    ],
+    idNumber: "",
+    idNumberRules: [(v) => !!v || "identificacion es obligatoria"],
+
+    password: "",
+    passwordRules: [(v) => !!v || "contraseña es obligatoria"],
+
+    checkbox: false,
+    id: null,
+  }),
+  methods: {
+    
+   newUser(){
+      let obj = { firstName: this.firstName, 
+                  lastName: this.lastName, 
+                  idNumber: this.idNumber, 
+                  email: this.email, 
+                  password:this.password};
+      store.dispatch("setUsers", obj).then(() => {
+        store.dispatch("getUsers");
+      });
+      this.$refs.form.reset();
+    }
+   
+  },
+  created: () => {
+    //accede a las acciones del store
+    
+    store.dispatch("getUsers");
+  },
+  computed: {
+   
+    users: () => {
+      return store.state.users;
+    },
+  },
+};
+</script>
+
+<style>
+</style>
