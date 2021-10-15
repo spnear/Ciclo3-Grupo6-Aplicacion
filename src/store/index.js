@@ -29,14 +29,14 @@ export default new Vuex.Store({
       body: JSON.stringify(users)
     });
   },
-  async loginUser({commit}, users){
+ /* async loginUser({commit}, users){
     const peticion = await fetch('http://localhost:3000/users', {
       method: 'POST',
       headers: {
         'Content-Type':'application/json'
       },
       body: JSON.stringify(users)
-    });},
+    });},*/
 
 },
   modules: {
