@@ -1,4 +1,5 @@
 module.exports = {
     
-    db: "mongodb://localhost:27017/utp_grupo2"
+    db: "mongodb://localhost:27017/utp_grupo2",
+   
 }

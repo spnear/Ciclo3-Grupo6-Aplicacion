@@ -6,6 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     users: []
+   
   },
   mutations: {
     setUsers(state, payload){
@@ -29,14 +30,14 @@ export default new Vuex.Store({
       body: JSON.stringify(users)
     });
   },
- /* async loginUser({commit}, users){
-    const peticion = await fetch('http://localhost:3000/users', {
+ async loginUser({commit}, users){
+    const peticion = await fetch('http://localhost:3000/login', {
       method: 'POST',
       headers: {
         'Content-Type':'application/json'
       },
       body: JSON.stringify(users)
-    });},*/
+    });},
 
 },
   modules: {
