@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt-nodejs')
 const schema = mongoose.Schema;
 
+
 var personSchema = new schema({
 firstName: {
     type: String
@@ -29,8 +30,9 @@ password: {
 }
 
 );
-personSchema.methods.isCorrectPassword =function(password , callback){
-  bcrypt.compare(password, this.password, function(err,same){
+
+personSchema.methods.isCorrectPassword = function(uspassword , callback){
+  bcrypt.compare(uspassword, this.password, function(err,same){
     if(err){
       callback(err);
     }else{
@@ -44,4 +46,4 @@ personSchema.methods.isCorrectPassword =function(password , callback){
 
 
 
-module.exports = mongoose.model('Persona', personSchema);
+module.exports = mongoose.model('person', personSchema);

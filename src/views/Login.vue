@@ -37,9 +37,9 @@
                                             </div>
                                         </div>
                                        
-                                        <button href="index.html" class="btn btn-primary btn-user btn-block" @click="loginUser()" >
+                                        <router-link to="/bookings" ><button  class="btn btn-primary btn-user btn-block" @click="loginUser()"  >
                                             Login
-                                        </button>
+                                        </button> </router-link>
                                         <hr>
                                         <a href="index.html" class="btn btn-google btn-user btn-block">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
@@ -87,10 +87,10 @@ export default {
   }),
   methods: {
        loginUser(){
-      let obj = {  
+         let obj = {  
                   email: this.email, 
                   password:this.password};
-      store.dispatch("getUser", obj).then(() => {
+      store.dispatch("loginUser", obj).then(() => {
         store.dispatch("getUsers");
       });
       this.$refs.form.reset();
